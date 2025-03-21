@@ -106,6 +106,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor:pointer;  
   }
   .picover:hover .backimg{
     transform: scale(1);
