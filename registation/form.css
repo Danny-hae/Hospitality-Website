@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    justify-content: center;
+    align-items: center;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070707;
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  .nav-logo{
+    color: rgb(241, 234, 234);
+    text-decoration: none;
+    font-size: 60px;
+    text-align: center;
+
+  }
+  
+  .navbar .logo a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links  {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .toggle{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    
+  }
+  button{
+    background-color: #faf9f9;
+    border-radius: 5px;
+    /* border-style:solid; */
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+  }
+  @media screen and (max-width:460px){
+    .toggle{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+    
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+  .card{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width:600px){
+    .card{
+        justify-content: start;
+    }
+    
+    
+  }
+  
+
+.container {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.76);
+   
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a0a0a;
+}
+.btn{
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    color: #ccc;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
