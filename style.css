@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigation Bar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070707;
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  .nav-logo{
+    color: rgb(241, 234, 234);
+    text-decoration: none;
+    font-size: 60px;
+    text-align: center;
+
+  }
+  
+  .navbar .logo a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links  {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .toggle{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    
+  }
+  button{
+    background-color: #faf9f9;
+    border-radius: 5px;
+    /* border-style:solid; */
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+  }
+  @media screen and (max-width:460px){
+    .toggle{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+    
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+
+  /* header */
+
+  .picover{
+    width: 100%;
+    height: 500px;
+    /* background-color: aqua; */
+    background-image: url(./img/section\ img.jfif);
+    filter: brightness(100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .picover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #07070733;
+    position: absolute;
+  }
+  .backimg{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.068);
+    color: rgba(250, 248, 248, 0.89);
+    z-index: 1000;
+    transition: 1s;
+    transform: scale(0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .picover:hover .backimg{
+    transform: scale(1);
+  }
+
+/* cards */
+#c1{
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+}
+.main{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  
+
+}
+@media screen and (max-width:500px){
+  .main{
+      display: grid;
+  }
+  
+}
+
+  .skills{
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.315);
+    padding: 20px;
+    margin: 10px;
+    /* width: 250px; */
+    justify-content: center;
+    align-items: center;
+}
+.skills1 {
+  box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.315);
+  padding: 20px;
+  margin: 10px;
+  /* width: 250px; */
+  justify-content: center;
+  align-items: center;
+}
+.skills2{
+  box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.315);
+  padding: 20px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.main,p,h4{
+  margin-top: 20px;
+  /* color: #ff6347; */
+}
+.skills:hover{
+  transition: 1s;
+  transform:scale(1.1) ;
+}
+.skills1:hover{
+  transition: 1s;
+  transform:scale(1.1) ;
+}
+.skills2:hover{
+  transition: 1s;
+  transform:scale(1.1) ;
+}
+
+/* explore doctor */
+#c2{
+  text-decoration: underline;
+  margin-top: 40px;
+  text-align: center;
+  align-items: center;
+}
+.specialist{
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (max-width:460px){
+  .specialist{
+      display: grid;
+  }
+}
+
+.content{
+  background-color: #0e0e0e2d;
+  border-radius: 10px;
+  box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.315);
+  padding: 20px;
+  margin: 10px;
+  width: 350px ;
+  justify-content: center;
+  align-items: center;
+}
+.content:hover{
+  transition: 1s;
+  transform:scale(1.1) ;
+}
+
+/* contact */
+#c3{
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+
+
+}
+
+/* footer */
+footer{
+  padding: 30px;
+  height: 100px;
+  background-color: gray;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
